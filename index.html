@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="ka">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DigitalFlow - ციფრული მარკეტინგის სააგენტო</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Cookie Notification -->
+    <div class="cookie-notification" id="cookieNotification">
+      <div class="cookie-text">
+        <strong>ჩვენ ვიყენებთ Cookie-ებს</strong><br />
+        ეს ვებსაიტი იყენებს Cookie-ებს თქვენი გამოცდილების გასაუმჯობესებლად.
+      </div>
+      <div class="cookie-buttons">
+        <button class="cookie-btn cookie-decline" id="cookieDecline">
+          უარი
+        </button>
+        <button class="cookie-btn cookie-accept" id="cookieAccept">
+          მიღება
+        </button>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header id="header">
+      <nav>
+        <div class="logo">DigitalFlow</div>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home">მთავარი</a></li>
+          <li><a href="#services">სერვისები</a></li>
+          <li><a href="#portfolio">პორტფოლიო</a></li>
+          <li><a href="#team">გუნდი</a></li>
+          <li><a href="#testimonials">მიმოხილვები</a></li>
+          <li><a href="#contact">კონტაქტი</a></li>
+        </ul>
+        <div class="burger" id="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <h1>ციფრული მარკეტინგი მომავლისთვის</h1>
+        <p>ჩვენ ვქმნით წარმატებულ ბრენდებს ციფრულ სამყაროში!</p>
+        <a href="#contact" class="cta-button">დაგვიკავშირდით</a>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+      <div class="container">
+        <h2 class="section-title">ჩვენი სერვისები</h2>
+        <div class="services-grid" id="servicesGrid">
+          <div class="loading-spinner">
+            <div class="spinner"></div>
+            <p>იტვირთება...</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <h2 class="section-title">ჩვენი პროექტები</h2>
+        <div class="portfolio-grid" id="portfolioGrid">
+          <div class="loading-spinner">
+            <div class="spinner"></div>
+            <p>იტვირთება...</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team" id="team">
+      <div class="container">
+        <h2 class="section-title">ჩვენი გუნდი</h2>
+        <div class="team-grid" id="teamGrid">
+          <div class="loading-spinner">
+            <div class="spinner"></div>
+            <p>იტვირთება...</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+      <div class="container">
+        <h2 class="section-title">რას ამბობენ კლიენტები</h2>
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <p class="testimonial-text">Loading...</p>
+            <div class="testimonial-author">
+              <img class="author-avatar" />
+              <div class="author-info">
+                <h4 class="author-name">Loading...</h4>
+                <p>User</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <p class="testimonial-text">Loading...</p>
+            <div class="testimonial-author">
+              <img class="author-avatar" />
+              <div class="author-info">
+                <h4 class="author-name">Loading...</h4>
+                <p>User</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <p class="testimonial-text">Loading...</p>
+            <div class="testimonial-author">
+              <img class="author-avatar" />
+              <div class="author-info">
+                <h4 class="author-name">Loading...</h4>
+                <p>User</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <h2 class="section-title">დაგვიკავშირდით</h2>
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="fullname">სახელი და გვარი *</label>
+            <input type="text" id="fullname" name="fullname" required />
+            <span class="error-message"
+              >გთხოვთ შეიყვანოთ სახელი და გვარი (მინ. 3 ასო)</span
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="email">ელ. ფოსტა *</label>
+            <input type="email" id="email" name="email" required />
+            <span class="error-message">გთხოვთ შეიყვანოთ სწორი ელ. ფოსტა</span>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">ტელეფონი *</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              required
+              placeholder="5XX XX XX XX"
+            />
+            <span class="error-message"
+              >გთხოვთ შეიყვანოთ სწორი ტელეფონის ნომერი</span
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="password">პაროლი *</label>
+            <div class="password-wrapper">
+              <input type="password" id="password" name="password" required />
+              <span class="toggle-password" id="togglePassword">👁️</span>
+            </div>
+            <span class="error-message"
+              >პაროლი უნდა შეიცავდეს მინ. 8 სიმბოლოს, ერთ დიდ ასოს და
+              ციფრს</span
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="service">აირჩიეთ სერვისი *</label>
+            <select id="service" name="service" required>
+              <option value="">აირჩიეთ სერვისი</option>
+              <option value="web">ვებ დეველოპმენტი</option>
+              <option value="marketing">დიგიტალური მარკეტინგი</option>
+              <option value="seo">SEO ოპტიმიზაცია</option>
+              <option value="branding">ბრენდინგი</option>
+              <option value="social">სოციალური მედია</option>
+            </select>
+            <span class="error-message">გთხოვთ აირჩიოთ სერვისი</span>
+          </div>
+
+          <div class="form-group">
+            <label for="message">შეტყობინება *</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <span class="error-message"
+              >გთხოვთ შეიყვანოთ შეტყობინება (მინ. 10 სიმბოლო)</span
+            >
+          </div>
+
+          <button type="submit" class="cta-button">გაგზავნა</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>DigitalFlow</h3>
+          <p>ციფრული მარკეტინგის წამყვანი სააგენტო საქართველოში</p>
+        </div>
+        <div class="footer-section">
+          <h3>სწრაფი ბმულები</h3>
+          <a href="#services">სერვისები</a>
+          <a href="#portfolio">პორტფოლიო</a>
+          <a href="#team">გუნდი</a>
+          <a href="#contact">კონტაქტი</a>
+        </div>
+        <div class="footer-section">
+          <h3>კონტაქტი</h3>
+          <p>📧 info@digitalflow.ge</p>
+          <p>📱 +995 555 123 456</p>
+          <p>📍 თბილისი, საქართველო</p>
+        </div>
+        <div class="footer-section">
+          <h3>სოციალური ქსელები</h3>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook">F</a>
+            <a href="#" aria-label="Instagram">I</a>
+            <a href="#" aria-label="LinkedIn">L</a>
+            <a href="#" aria-label="Twitter">T</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 DigitalFlow. ყველა უფლება დაცულია.</p>
+      </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+      ↑
+    </button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
